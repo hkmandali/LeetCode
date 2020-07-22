@@ -1,0 +1,10 @@
+
+class Solution {
+    public int arrangeCoins(int n) {
+        double root = Math.sqrt(2*(double)n);
+        double add = (long)(root)*(long)(root+1)/2;
+        if(add > n)
+            return (int)(root-1);
+        return (int)root;
+    }
+}
