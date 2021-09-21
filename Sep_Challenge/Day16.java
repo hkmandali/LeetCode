@@ -15,18 +15,19 @@ public class Day16 {
         int i;
         while(hor < row && ver < col)
         {
-            for(i = ver;i<col;++i)
-            {
-                System.out.println("first loop value is "+matrix[hor][i]);
-                ret.add(matrix[hor][i]);
+            if(hor < row) {
+                for (i = ver; i < col; ++i) {
+                    System.out.println("first loop value is " + matrix[hor][i]);
+                    ret.add(matrix[hor][i]);
+                }
             }
             hor++;
             System.out.println("after first loop  hor is  "+hor+"  row  is  " +row +"  ver is   "+ver +"  col is  "+col);
-
-            for(i = hor;i<row;++i)
-            {
-                System.out.println("second loop value is "+matrix[i][col-1]);
-                ret.add(matrix[i][col-1]);
+            if(ver < col) {
+                for (i = hor; i < row; ++i) {
+                    System.out.println("second loop value is " + matrix[i][col - 1]);
+                    ret.add(matrix[i][col - 1]);
+                }
             }
 
             col--;
