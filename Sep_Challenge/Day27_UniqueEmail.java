@@ -1,6 +1,6 @@
 import java.util.HashSet;
 
-public class Day28_UniqueEmail {
+public class Day27_UniqueEmail {
     public int numUniqueEmails(String[] emails) {
         if(null == emails || 0 == emails.length)
             return 0;
@@ -26,7 +26,7 @@ public class Day28_UniqueEmail {
         return uniqueset.size();
     }
     public static void main(String[] args) {
-        System.out.println(new Day28_UniqueEmail().numUniqueEmails(new String[]{"test.email+alex@leetcode.com",
+        System.out.println(new Day27_UniqueEmail().numUniqueEmails(new String[]{"test.email+alex@leetcode.com",
                 "test.email.leet+alex@code.com"}));
     }
 }
