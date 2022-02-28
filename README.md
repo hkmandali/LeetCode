@@ -1,6 +1,22 @@
 # LeetCode
 
 // SOme important concepts of Java
+// priority queue
+
+PriorityQueue<ListNode> pq = new PriorityQueue<>(new Comparator< ListNode >() { <br>
+            @Override <br>
+            public int compare(ListNode a,ListNode b)<br>
+            {<br>
+                if(a.val < b.val)<br>
+                {<br>
+                    return -1;<br>
+                }<br>
+                else if(a.val > b.val)<br>
+                    return 1;<br>
+                else<br>
+                    return 0;<br>
+            }<br>
+        });<br>
 
 import static is used when we want to import static variables from other classes 
 for eg :  import static java.lang.Math.PI; and we can use PI directly in the java file else we need to use Math.PI everytime
